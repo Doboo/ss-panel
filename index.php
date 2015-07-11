@@ -35,7 +35,7 @@ include_once 'lib/config.php';
 
     <div class="jumbotron">
         <h2><?php echo $site_name; ?></h2>
-        <p class="lead"> tuanss第000000期，每月50G。。</p>
+        <p class="lead"> tuanss第000000期，每月50G。</p>
         <p><a class="btn btn-lg btn-success" href="user/login.php" role="button">立即登录</a></p>
     </div>
         <div class="col-lg-6">
