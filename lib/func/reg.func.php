@@ -7,8 +7,8 @@
 
 //获取 临时 temp $pass
 function get_temp_pass(){
-    $a = rand(100000000,999999999);
-    return $a;
+    $a = rand(10000000000,99999999999);
+   return $a;
 }
 
 //判断username是否可用

@@ -46,7 +46,7 @@ if($okk){
         echo ' <script>alert("用户名已经被使用!")</script> ';
         echo " <script>window.location='reg.php';</script> " ;
     }
-    if(strlen($username)<7||strlen($username)>32){
+    if(strlen($username)<3||strlen($username)>32){
         $info_ok = 0;
         echo ' <script>alert("用户名长度错误!")</script> ';
         echo " <script>window.location='reg.php';</script> " ;
@@ -68,7 +68,7 @@ if($okk){
         //邀请码数量
         $invite_num = rand(1, 1);
 
-        $rt = reg($username, $email, $pwd, $pass, $transfer, $port, $invite_num, 0.00);
+        $rt = reg($username, $email, $pwd, $pass, $transfer, $port, $invite_num, 12.00);
         if ($rt) {
             echo ' <script>alert("注册成功，返回登录!")</script> ';
             echo " <script>window.location='login.php';</script> ";
