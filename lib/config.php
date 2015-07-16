@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  * ss-panel配置文件
  * https://github.com/orvice/ss-panel
@@ -6,53 +6,73 @@
  * https://orvice.org
  */
 
-//Define DB Connection
+//定义流量
+$tokb = 1024;
+$tomb = 1024*1024;
+$togb = $tomb*1024;
+//Define DB Connection  数据库信息
 define('DB_HOST','128.199.224.80');
 define('DB_USER','tuanss');
 define('DB_PWD','38196962');
-define('DB_DBNAME','tuanDB');
+define('DB_DBNAME','tuan10');
 define('DB_CHARSET','utf8');
-
-/*
- * 下面别修改
- */
-
-//Define system Path
-define('SS_PATH','');
-
-//Version
-$version   ="0.2.8";
-
-//set timezone
-date_default_timezone_set('PRC');
-
-//Using Mysqli
-$dbc = new mysqli(DB_HOST,DB_USER,DB_PWD,DB_DBNAME);
-$db_char = DB_CHARSET;
-$dbc->query("SET NAMES utf8");
-$dbc->query("SET time_zone = '+8:00'");
-
-//定义流量
-$tomb = 1024*1024;
-$togb = $tomb*1024;
-
-
-
+define('DB_TYPE','mysql'); 
 /*
  * 下面的东西根据需求修改
  */
 
 //define Plan
 //注册用户的初始化流量
-//默认2GiB
-$a_transfer = $togb*2;
+//默认5GiB
+$a_transfer = $togb*50;
 
 //签到设置 签到活的的最低最高流量,单位MB
 $check_min = 1;
 $check_max = 1;
 
-//name
-$site_name = "tuanSS";
+//name
+$site_name = "tuanss";
+$site_url  = "http://000000.tuanss.xyz/";
+$salt = "tuanss";
 
-//invite only
-$invite_only = true;
+//用户注册后获得的邀请码最低最高
+//都设置为0用户就不能邀请
+$user_invite_min = '0';
+$user_invite_max = '0';
+
+
+//
+//选择邮件服务
+// smtp未完成，现在只能用mailgun
+//mail-gun
+//mail-smtp
+$Selectmailservice = "mail-gun";
+//邮件发件人
+$sender = "zhangxinqi2013@gmail.com";
+
+//mail-gun
+// Get your key from https://mailgun.com
+$mailgun_key = "key-500c584f7b916adfa4ac3f49d61b9ac7";
+$mailgun_domain = "guoke.tuanss.xyz";
+
+
+//
+//mail-smtp
+// smtp发件方式暂时无法使用
+//设置smtp服务器连接方式:  
+//加密连接(ssl) = "1"
+//普通连接 = "0"
+$mail_smtp_Connection = "1";
+//smtp服务器端口 25 , 465 ...
+$mail_smtp_Port = 465;
+//smtp服务器
+$mail_smtp_Server = "smtp.gmail.com";
+//邮件帐号
+$mail_smtp_Account = "zhangxinqi2013@gmail.com";
+//邮件密码
+$mail_smtp_password = "lily77585zi";
+
+
+
+//
+require_once 'do.php';
