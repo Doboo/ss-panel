@@ -14,7 +14,7 @@ $togb = $tomb*1024;
 define('DB_HOST','128.199.224.80');
 define('DB_USER','tuanss');
 define('DB_PWD','38196962');
-define('DB_DBNAME','tuan10');
+define('DB_DBNAME','tuanDB');
 define('DB_CHARSET','utf8');
 define('DB_TYPE','mysql'); 
 /*
@@ -31,7 +31,7 @@ $check_min = 1;
 $check_max = 1;
 
 //name
-$site_name = "tuanss";
+$site_name = "mysitename";
 $site_url  = "http://000000.tuanss.xyz/";
 $salt = "tuanss";
 
@@ -70,7 +70,7 @@ $mail_smtp_Server = "smtp.gmail.com";
 //邮件帐号
 $mail_smtp_Account = "zhangxinqi2013@gmail.com";
 //邮件密码
-$mail_smtp_password = "lily77585zi";
+$mail_smtp_password = "guokeguoke";
 
 
 
