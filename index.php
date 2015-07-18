@@ -15,12 +15,12 @@ include_once 'header.php';
             <a href="http://www.vultr.com/?ref=6823336"><h4>Vultr</h4></a>
             <p>使用我的推广链接,注册送10美元，可用2个月</p>
             <h4><a href="https://www.digitalocean.com/?refcode=69936409b631">Digitalocean</a></h4>
-            <p> 使用我的推广链接，注册送10美元，可用1个月</p>
+            <p> 使用我的推广链接，注册送10美元，可用2个月</p>
         </div>
 
         <div class="col-lg-6">
             <a href="https://bandwagonhost.com/aff.php?aff=3745"><h4>搬瓦工</h4></a>
-            <p>支持支付宝，最低3.99美元1年</p>
+            <p>支持支付宝，最低3.99美元1年,最便宜的VPS</p>
 
             <h4><a href="https://www.linode.com/?r=cbdd41f02c5144e81c1a3885150a2ff2afd28b64">Linode</a></h4>
             <p> 使用我的推广链接，注册送10美元，可用1个月。</p>
