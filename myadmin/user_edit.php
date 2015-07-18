@@ -103,7 +103,7 @@ if(!empty($_GET)){
                     email: $("#email").val(),
                     passwd: $("#passwd").val(),
                     transfer_enable: $("#transfer_enable").val(),
-                       money: $("#money").val(),
+                     money: $("#money").val(),
                     invite_num: $("#invite_num").val()
                 },
                 success:function(data){
