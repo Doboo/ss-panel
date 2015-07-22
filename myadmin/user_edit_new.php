@@ -59,7 +59,10 @@ if(!empty($_GET)){
                                 <label for="cate_title">设置流量</label>
                                 <input   class="form-control" id="transfer_enable"  value="<?php echo $rs['transfer_enable']/$togb;?>" placeholder="单位为GB，直接输入数值" >
                             </div>
-                            
+                                <div class="form-group">
+                                <label for="cate_title">可用月数</label>
+                                <input   class="form-control" id="money"  value="<?php echo $rs['money'];?>" placeholder="输入整数" >
+                            </div>
                             <div class="form-group">
                                 <label for="cate_title">邀请码数量</label>
 
@@ -100,6 +103,7 @@ if(!empty($_GET)){
                     email: $("#email").val(),
                     passwd: $("#passwd").val(),
                     transfer_enable: $("#transfer_enable").val(),
+                     money: $("#money").val(),
                     invite_num: $("#invite_num").val()
                 },
                 success:function(data){

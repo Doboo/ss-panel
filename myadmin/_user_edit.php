@@ -6,13 +6,13 @@ if(!empty($_POST)){
     $uid = $_POST['user_uid'];
     $name = $_POST['name'];
     $passwd = $_POST['passwd'];
+    $email = $_POST['email'];
     $transfer_enable = $_POST['transfer_enable'];
-    $money = $_POST['money'];
     $invite_num = $_POST['invite_num'];
       
     //更新
     $User = new Ss\User\User($uid);
-    $query = $User->updateUser($name,$email,$passwd,$transfer_enable,$transfer_enable,$money,$invite_num);
+    $query = $User->updateUser($name,$email,$passwd,$transfer_enable,$invite_num);
     if($query){
                 $ue['code'] = '1';
                 $ue['ok'] = '1';
