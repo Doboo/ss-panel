@@ -32,7 +32,7 @@ $check_max = 1;
 
 //name
 $site_name = "mysitename";
-$site_url  = "http://000000.tuanss.xyz/";
+$site_url  = "http://000000.tuanss.xyz:8080";
 $salt = "tuanss";
 
 //用户注册后获得的邀请码最低最高
