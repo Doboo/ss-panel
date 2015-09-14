@@ -25,7 +25,7 @@ class Reg {
 
     function Reg($username,$email,$pass,$plan,$transfer,$invite_num,$ref_by){
 
-        $sspass = \Ss\Etc\Comm::get_random_char(12);
+        $sspass = \Ss\Etc\Comm::get_random_char(8);
 
         $this->db->insert($this->table,[
            "user_name" => $username,
@@ -37,7 +37,7 @@ class Reg {
             "d" => '0',
             "plan" => $plan,
             "transfer_enable" => $transfer,
-            "port" => $this->GetLastPort()+rand(1,3),
+            "port" => $this->GetLastPort()+rand(2,4),
             "invite_num" => $invite_num,
             "money" => '12',
             "#reg_date" =>  'NOW()',
