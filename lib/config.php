@@ -11,7 +11,7 @@ $tokb = 1024;
 $tomb = 1024*1024;
 $togb = $tomb*1024;
 //Define DB Connection  数据库信息
-define('DB_HOST','128.199.224.80');
+define('DB_HOST','104.233.86.89');
 define('DB_USER','tuanss');
 define('DB_PWD','38196962');
 define('DB_DBNAME','tuanDB');
