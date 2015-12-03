@@ -63,12 +63,12 @@ if($okk){
         //默认信息  $pass ss密码  $transfer 流量  $port 端口
         $pass = get_temp_pass();
         $transfer = $a_transfer;
-        $port = get_last_port() + rand(2, 7);
+        $port = get_last_port() + rand(2, 5);
 
         //邀请码数量
         $invite_num = rand(1, 1);
 
-        $rt = reg($username, $email, $pwd, $pass, $transfer, $port, $invite_num, 12.00);
+        $rt = reg($username, $email, $pwd, $pass, $transfer, $port, $invite_num, 6.00);
         if ($rt) {
             echo ' <script>alert("注册成功，返回登录!")</script> ';
             echo " <script>window.location='login.php';</script> ";

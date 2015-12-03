@@ -84,8 +84,8 @@ include_once '../lib/config.php';
             return false;
         }
 
-        if(document.reg.username.value.length < 6){
-            alert("用户名长度至少6位");
+        if(document.reg.username.value.length < 3){
+            alert("用户名长度至少3位");
             document.reg.username.focus();
             return false;
         }
@@ -96,8 +96,8 @@ include_once '../lib/config.php';
             return false;
         }
 
-        if(document.reg.password.value.length < 8){
-            alert("密码长度至少8位!");
+        if(document.reg.password.value.length < 6){
+            alert("密码长度至少6位!");
             document.reg.password.focus();
             return false;
         }

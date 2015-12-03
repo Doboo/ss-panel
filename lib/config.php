@@ -7,7 +7,7 @@
  */
 
 //Define DB Connection
-define('DB_HOST','128.199.224.80');
+define('DB_HOST','104.233.86.89');
 define('DB_USER','tuanss');
 define('DB_PWD','38196962');
 define('DB_DBNAME','tuanDB');
@@ -45,14 +45,14 @@ $togb = $tomb*1024;
 //define Plan
 //注册用户的初始化流量
 //默认2GiB
-$a_transfer = $togb*2;
+$a_transfer = $togb*50;
 
 //签到设置 签到活的的最低最高流量,单位MB
 $check_min = 1;
 $check_max = 1;
 
 //name
-$site_name = "tuanSS";
+$site_name = "过客SS";
 
 //invite only
 $invite_only = true;
