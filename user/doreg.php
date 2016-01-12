@@ -68,7 +68,7 @@ if($okk){
         //邀请码数量
         $invite_num = rand(1, 1);
 
-        $rt = reg($username, $email, $pwd, $pass, $transfer, $port, $invite_num, 6.00);
+        $rt = reg($username, $email, $pwd, $pass, $transfer, $port, $invite_num, 12.00);
         if ($rt) {
             echo ' <script>alert("注册成功，返回登录!")</script> ';
             echo " <script>window.location='login.php';</script> ";
