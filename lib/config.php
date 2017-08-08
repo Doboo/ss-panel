@@ -7,10 +7,10 @@
  */
 
 //Define DB Connection
-define('DB_HOST','104.129.176.189');
-define('DB_USER','tuanss');
-define('DB_PWD','38196962');
-define('DB_DBNAME','tuanDB');
+define('DB_HOST','104.129.177.190');
+define('DB_USER','guoke');
+define('DB_PWD','guoke');
+define('DB_DBNAME','guoke');
 define('DB_CHARSET','utf8');
 
 /*
