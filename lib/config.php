@@ -7,8 +7,8 @@
  */
 
 //Define DB Connection
-define('DB_HOST','104.129.177.190');
-define('DB_USER','guoke');
+define('DB_HOST','172.96.133.191');
+define('DB_USER','tuanss');
 define('DB_PWD','guoke');
 define('DB_DBNAME','guoke');
 define('DB_CHARSET','utf8');
