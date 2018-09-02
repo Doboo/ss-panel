@@ -7,7 +7,7 @@
  */
 
 //Define DB Connection
-define('DB_HOST','172.96.133.191');
+define('DB_HOST','104.225.252.30');
 define('DB_USER','tuanss');
 define('DB_PWD','guoke');
 define('DB_DBNAME','guoke');
